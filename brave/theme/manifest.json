@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Cosmic Brass Day",
+  "version": "1.0",
+  "description": "Parchment theme from the COSMIC Brass Day rice: tan icons, one sand accent.",
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "theme": {
+    "colors": {
+      "frame": [244, 236, 214],
+      "frame_inactive": [244, 236, 214],
+      "frame_incognito": [244, 236, 214],
+      "frame_incognito_inactive": [244, 236, 214],
+      "background_tab": [244, 236, 214],
+      "background_tab_inactive": [244, 236, 214],
+      "background_tab_incognito": [244, 236, 214],
+      "background_tab_incognito_inactive": [244, 236, 214],
+      "toolbar": [251, 245, 231],
+      "tab_text": [119, 96, 59],
+      "tab_background_text": [124, 96, 44],
+      "tab_background_text_inactive": [124, 96, 44],
+      "tab_background_text_incognito": [124, 96, 44],
+      "tab_background_text_incognito_inactive": [124, 96, 44],
+      "bookmark_text": [29, 28, 23],
+      "toolbar_button_icon": [124, 96, 44],
+      "omnibox_background": [227, 216, 187],
+      "omnibox_text": [29, 28, 23],
+      "ntp_background": [244, 236, 214],
+      "ntp_text": [29, 28, 23],
+      "ntp_link": [119, 96, 59]
+    }
+  }
+}

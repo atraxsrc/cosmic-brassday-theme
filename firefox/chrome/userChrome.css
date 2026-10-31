@@ -1,0 +1,176 @@
+/* ==========================================================================
+   Brass Day - userChrome.css
+   Ported from the DarkGold baseline, recoloured for the COSMIC Brass Day palette
+
+   Colors from Brass Day:
+     bg #F4ECD6  elevated #FBF5E7  menu text #7C602C (tan)  bright #0E0E0D
+     sand #77603B  border #E3D8BB
+     hover #B3ADA2  pressed #AAA193  (sand tinted into the panel)
+
+   No :root overrides - variables stay on the popup they belong to.
+
+   Install:
+     1. about:config -> toolkit.legacyUserProfileCustomizations.stylesheets = true
+     2. about:support -> Profile Directory -> Open Directory
+     3. put this file at  chrome/userChrome.css
+     4. FULL restart
+   ========================================================================== */
+
+/* ---------- rounded corners: URL bar + search ---------- */
+#urlbar-background,
+#searchbar {
+  border-radius: 10px !important;
+  border-color: #77603B !important;
+}
+
+#urlbar[focused="true"] > #urlbar-background {
+  box-shadow: 0 0 10px -3px #77603B !important;
+}
+
+/* ---------- rounded corners: tabs ---------- */
+.tabbrowser-tab .tab-background {
+  border-radius: 10px !important;
+  margin-inline: 2px !important;
+  margin-block: 3px !important;
+}
+
+/* ---------- rounded corners: urlbar dropdown ---------- */
+.urlbarView-row {
+  border-radius: 7px !important;
+  margin-inline: 3px !important;
+}
+
+/* ---------- rounded corners: toolbar buttons ---------- */
+toolbarbutton .toolbarbutton-icon {
+  border-radius: 7px !important;
+}
+
+/* ==========================================================================
+   MENU COLORS - scoped to the popups only.
+   ========================================================================== */
+
+#appMenu-popup,
+#widget-overflow,
+#customizationui-widget-multiview,
+menupopup {
+  --panel-background: #FBF5E7 !important;
+  --panel-color: #7C602C !important;
+  --panel-border-color: #E3D8BB !important;
+  --panel-border-radius: 10px !important;
+  --panel-separator-color: #E3D8BB !important;
+  --panel-item-hover-bgcolor: #B3ADA2 !important;
+  --panel-item-active-bgcolor: #AAA193 !important;
+
+  --arrowpanel-background: #FBF5E7 !important;
+  --arrowpanel-color: #7C602C !important;
+  --arrowpanel-border-color: #E3D8BB !important;
+  --arrowpanel-dimmed: #B3ADA2 !important;
+  --arrowpanel-dimmed-further: #AAA193 !important;
+
+  /* newer Firefox panel vars (v140+) */
+  --panel-background-color: #FBF5E7 !important;
+  --panel-text-color: #7C602C !important;
+}
+
+/* Firefox's own accent (Sign in button, toggles, focus rings) inside the
+   popups. Without this it follows the desktop accent, not the theme. */
+#appMenu-popup,
+#widget-overflow,
+#customizationui-widget-multiview,
+#protections-popup,
+#identity-popup,
+menupopup {
+  --color-accent-primary: #77603B !important;
+  --color-accent-primary-hover: #715E3D !important;
+  --color-accent-primary-active: #77603B !important;
+  --button-background-color-primary: #77603B !important;
+  --button-background-color-primary-hover: #715E3D !important;
+  --button-background-color-primary-active: #77603B !important;
+  --button-text-color-primary: #F4ECD6 !important;
+  --focus-outline-color: #77603B !important;
+}
+
+/* Drop GTK/native menuitem chrome so background-color actually paints.
+   Without this, Cosmic/GTK hover is a 1-stop gray wash. */
+menupopup,
+menupopup menuitem,
+menupopup menu,
+menupopup menuseparator,
+#contentAreaContextMenu,
+#contentAreaContextMenu menuitem,
+#contentAreaContextMenu menu,
+#context-navigation,
+#context-navigation menuitem {
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
+/* rounded menu rows */
+#appMenu-popup .subviewbutton,
+#widget-overflow .subviewbutton,
+menupopup menuitem,
+menupopup menu {
+  border-radius: 7px !important;
+  margin-inline: 4px !important;
+}
+
+/* hover / keyboard-active row
+   Sand-tinted fill + bright text + slim sand rail so the pointer
+   position is obvious without leaving Brass Day. */
+#appMenu-popup .subviewbutton:not([disabled]):hover,
+#widget-overflow .subviewbutton:not([disabled]):hover,
+menupopup menuitem:not([disabled]):hover,
+menupopup menu:not([disabled]):hover,
+menupopup menuitem[_moz-menuactive="true"]:not([disabled]),
+menupopup menu[_moz-menuactive="true"]:not([disabled]),
+#contentAreaContextMenu menuitem:not([disabled]):hover,
+#contentAreaContextMenu menu:not([disabled]):hover,
+#contentAreaContextMenu menuitem[_moz-menuactive="true"]:not([disabled]),
+#contentAreaContextMenu menu[_moz-menuactive="true"]:not([disabled]),
+#context-navigation menuitem:not([disabled]):hover,
+#context-navigation menuitem[_moz-menuactive="true"]:not([disabled]) {
+  background-color: #B3ADA2 !important;
+  color: #0E0E0D !important;
+  box-shadow: inset 3px 0 0 #77603B !important;
+  outline: none !important;
+}
+
+/* access-key underline (the S in Save, A in As) - slightly brighter on hover */
+menupopup menuitem[_moz-menuactive="true"] .menu-text,
+menupopup menu[_moz-menuactive="true"] .menu-text,
+menupopup menuitem:hover .menu-text,
+menupopup menu:hover .menu-text {
+  color: #0E0E0D !important;
+  text-decoration-color: #77603B !important;
+}
+
+/* separators */
+#appMenu-popup toolbarseparator,
+menupopup menuseparator {
+  border-top: 1px solid #E3D8BB !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+}
+
+/* ---------- hamburger / overflow / identity shells ----------
+   Context menus are NOT given an extra element border; native
+   --panel-border-color already draws one. */
+#appMenu-popup,
+#widget-overflow,
+#customizationui-widget-multiview,
+#protections-popup,
+#identity-popup {
+  border: 1px solid #E3D8BB !important;
+  border-radius: 10px !important;
+  background-color: #FBF5E7 !important;
+  padding: 0 !important;
+}
+
+#appMenu-popup panelmultiview,
+#appMenu-popup panelview,
+#appMenu-popup .panel-subview-body,
+#appMenu-multiView,
+#widget-overflow .panel-subview-body {
+  border-radius: 10px !important;
+  background-color: #FBF5E7 !important;
+}

@@ -1,0 +1,50 @@
+{
+  "manifest_version": 2,
+  "name": "Cosmic Brass Day",
+  "version": "1.0",
+  "description": "Parchment theme from the COSMIC Brass Day rice: tan icons, one sand accent.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{01e7bb88-2788-5ab6-bda4-5bde220ac67f}"
+    }
+  },
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "64": "icons/icon-64.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+  "theme": {
+    "colors": {
+      "toolbar": "#FBF5E7",
+      "toolbar_text": "#1d1c17",
+      "frame": "#F4ECD6",
+      "tab_background_text": "#7c602c",
+      "tab_text": "#77603b",
+      "toolbar_field": "#e3d8bb",
+      "toolbar_field_text": "#1d1c17",
+      "toolbar_field_border_focus": "#77603B",
+      "toolbar_field_highlight": "#77603B",
+      "toolbar_field_highlight_text": "#F4ECD6",
+      "tab_line": "#77603B",
+      "popup": "#FBF5E7",
+      "popup_text": "#1d1c17",
+      "button_background_active": "#77603B",
+      "button_background_hover": "#e3d8bb",
+      "frame_inactive": "#F4ECD6",
+      "icons_attention": "#77603B",
+      "icons": "#7c602c",
+      "ntp_background": "#F4ECD6",
+      "ntp_text": "#1d1c17",
+      "popup_border": "#70614C",
+      "popup_highlight_text": "#F4ECD6",
+      "popup_highlight": "#77603B",
+      "sidebar_border": "#e3d8bb",
+      "sidebar_highlight_text": "#F4ECD6",
+      "sidebar_highlight": "#77603B",
+      "sidebar_text": "#1d1c17",
+      "tab_loading": "#77603B"
+    }
+  }
+}
