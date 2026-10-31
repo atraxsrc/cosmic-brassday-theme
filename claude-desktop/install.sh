@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Install the cosmic-brassday theme for Claude Desktop (the unofficial
+# Install the cosmic-brass theme for Claude Desktop (the unofficial
 # claude-desktop-extra Linux build) into its themes.d drop-in folder.
 # Backs up a different existing copy. Never deletes.
 set -euo pipefail
@@ -24,4 +24,4 @@ fi
 
 echo
 echo "Done. In Claude Desktop press Ctrl+Shift+T and pick cosmic-brass."
-echo "Brass Day is dark only; Settings -> Appearance changes nothing."
+echo "Brass Day is the light half; Settings -> Appearance -> Dark shows Brass."

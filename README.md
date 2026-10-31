@@ -6,7 +6,8 @@
 
 Pop!_OS 24.04 on COSMIC in parchment, coffee and sand: desktop, terminal,
 shell, Firefox, Brave, cursor, wallpapers. A warm light rice with no cold
-colour; brick is kept for what is wrong.
+colour; brick is kept for what is wrong. The light half of a pair;
+the dark half is [cosmic-brass-theme](https://github.com/atraxsrc/cosmic-brass-theme).
 
 ![Pop!_OS](https://img.shields.io/badge/Pop!_OS-24.04_LTS-77603b?style=for-the-badge&logo=popos&logoColor=white)
 ![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-7c602c?style=for-the-badge)
@@ -40,6 +41,14 @@ is at least 4.5:1 on the window background.
 | Muted | ![#67645b](https://placehold.co/12x12/67645b/67645b.png) Secondary text | ![#67645B](https://placehold.co/12x12/67645b/67645b.png) `#67645B` |
 | Dim | ![#9a978c](https://placehold.co/12x12/9a978c/9a978c.png) Comments | ![#9A978C](https://placehold.co/12x12/9a978c/9a978c.png) `#9A978C` |
 | Lines | ![#c0b496](https://placehold.co/12x12/c0b496/c0b496.png) Box lines, inactive | ![#C0B496](https://placehold.co/12x12/c0b496/c0b496.png) `#C0B496` |
+
+| Role | Brass Day | Brass |
+|------|---|---|
+| Background | ![#F4ECD6](https://placehold.co/12x12/f4ecd6/f4ecd6.png) `#F4ECD6` | ![#1C1B19](https://placehold.co/12x12/1c1b19/1c1b19.png) `#1C1B19` |
+| Text | ![#1D1C17](https://placehold.co/12x12/1d1c17/1d1c17.png) `#1D1C17` | ![#F0E4C5](https://placehold.co/12x12/f0e4c5/f0e4c5.png) `#F0E4C5` |
+| Accent | ![#77603B](https://placehold.co/12x12/77603b/77603b.png) `#77603B` | ![#D4BD99](https://placehold.co/12x12/d4bd99/d4bd99.png) `#D4BD99` |
+| Success | ![#7C602C](https://placehold.co/12x12/7c602c/7c602c.png) `#7C602C` | ![#C2A571](https://placehold.co/12x12/c2a571/c2a571.png) `#C2A571` |
+| Error | ![#A63426](https://placehold.co/12x12/a63426/a63426.png) `#A63426` | ![#DD6A5C](https://placehold.co/12x12/dd6a5c/dd6a5c.png) `#DD6A5C` |
 
 The accent is sand, 5.1:1 on the background and 5.5:1 on a container,
 dark enough that buttons and selections carry parchment text on top and the
@@ -96,7 +105,7 @@ accent never needs a brighter variant.
 │   ├── cosmic-brassday.tdesktop-theme # built theme, open this in Telegram
 │   └── build.sh                 # rebuilds it, optionally with a wallpaper
 ├── vscode
-│   ├── themes/                  # Cursor / VS Code colour theme, Cosmic Brass Day
+│   ├── themes/                  # Cursor / VS Code colour themes, Brass (dark) + Brass Day (light)
 │   ├── package.json             # extension manifest
 │   ├── install.sh               # packs a .vsix, installs it with cursor --install-extension
 │   └── README.md
@@ -136,6 +145,11 @@ applets and system UI (maximized apps stay solid), and corners are squared
 Appearance → Style → Frosted glass after import; those sliders survive a theme switch.
 
 Export from Appearance if you tweak backgrounds / tints so you do not lose them.
+
+Pairing tip: import `Brass.ron` from
+[cosmic-brass-theme](https://github.com/atraxsrc/cosmic-brass-theme) into the
+Dark slot and COSMIC's Dark / Light toggle flips between the two. Wallpaper,
+Firefox and the shell layer do not follow the toggle; those are per-rice files.
 
 ### Baseline settings
 
@@ -228,9 +242,10 @@ packing a `.crx`: [`brave/README.md`](brave/README.md).
 ## Claude Desktop
 
 For the unofficial [claude-desktop-extra](https://github.com/patrickjaja/claude-desktop-extra)
-Linux build. `claude-desktop/cosmic-brass.jsonc` carries the Brass Day palette in
-both of the file's blocks, so Claude's own Settings → Appearance toggle makes
-no difference. Colours come from `cosmic/BrassDay.ron`, contrast-checked (text and
+Linux build. `claude-desktop/cosmic-brass.jsonc` is one theme with both halves:
+Brass in dark mode and Brass Day in light mode, so Claude's own
+Settings → Appearance toggle switches between the two rices.
+Colours come from `cosmic/*.ron`, contrast-checked (text and
 button text 4.5:1, accents 3:1).
 
 ```bash
@@ -240,13 +255,18 @@ button text 4.5:1, accents 3:1).
 It copies the file into `~/.config/Claude/themes.d/`. Then press
 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> in Claude Desktop and pick **cosmic-brass**.
 
+The same file ships in [`cosmic-brass-theme`](https://github.com/atraxsrc/cosmic-brass-theme),
+so installing from either repo gives the same theme.
+
 ---
 
 ## Cursor editor
 
-`vscode/` is a colour theme extension for [Cursor](https://cursor.com):
-**Cosmic Brass Day**. It is a plain VS Code theme extension, so VS Code and VSCodium
-take it too. Code is coloured the way Neovim is in the rice; the workbench is
+`vscode/` is a colour theme extension for [Cursor](https://cursor.com) with
+both halves of the pair: **Cosmic Brass** and **Cosmic Brass Day**. It is a
+plain VS Code theme extension, so VS Code and VSCodium take it too, and the
+same extension ships in cosmic-brass-theme. Code is coloured the way Neovim is
+in the rice; the workbench is
 parchment with ivory menus, hovers and inputs, sand on the active tab, buttons
 and menu highlight, and the integrated terminal uses the COSMIC Terminal
 scheme. Cursor builds its Agent and chat panels from the same theme colours,
@@ -259,8 +279,9 @@ so they follow along.
 It packs `vscode/` into a `.vsix` and installs it with
 `cursor --install-extension`; run it again after editing the theme. Then press
 <kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>T</kbd> in Cursor and pick
-**Cosmic Brass Day**. The colours and the contrast notes are in
-[`vscode/README.md`](vscode/README.md).
+**Cosmic Brass Day**. Three lines in Cursor's `settings.json` make it follow
+COSMIC's Dark / Light toggle between Brass and Brass Day; they, the colours and
+the contrast notes are in [`vscode/README.md`](vscode/README.md).
 
 ---
 
@@ -288,6 +309,9 @@ background is plain parchment; to put a wallpaper behind the chat instead
 
 Built against Telegram Desktop 7.3.1. Calls, group calls, statistics charts and
 premium badges keep Telegram's own colours.
+
+Telegram has no dark / light pairing, so Brass, the dark half, ships its
+own theme.
 
 ---
 
@@ -527,11 +551,16 @@ The GUI steps it cannot do are printed at the end:
 2. COSMIC Terminal → View → Color schemes → Light tab → Import `cosmic-term/BrassDay-term.ron`
 3. Firefox: disable the old rice's add-on, enable this one, restart Firefox
 4. Settings → Wallpaper → a file from `backgrounds/`
-5. Claude Desktop: Ctrl+Shift+T → `cosmic-brass`
+5. Claude Desktop: Ctrl+Shift+T → `cosmic-brass`, Appearance → Light
 6. `exec zsh`, restart Neovim (`:Lazy clean` drops plugins only the old specs used)
 
 Skip 1 and 2 when that slot already holds Brass Day. The first time on this rice,
 run [Setup](#setup) once for the fonts, icons and cursor.
+
+**Within the pair** (Brass Day ↔ [Brass](https://github.com/atraxsrc/cosmic-brass-theme)): the two halves
+sit side by side in COSMIC's Dark and Light slots and share one Claude Desktop
+theme, so after the first time only the Firefox add-on and the wallpaper are
+left by hand. Add `--keep-icons` to keep one icon colour across the pair.
 
 Leaving Brass Day is the next rice's `./scripts/switch.sh`. `./cursors/uninstall.sh`
 puts the Pop cursor back.
