@@ -1,0 +1,39 @@
+{
+  "name": "cosmic-brassday-theme",
+  "displayName": "Cosmic Brass Day",
+  "description": "Dark colour theme from the COSMIC Brass Day rice, syntax as in its Neovim scheme.",
+  "version": "1.0.0",
+  "publisher": "atraxsrc",
+  "license": "MIT",
+  "icon": "icon.png",
+  "galleryBanner": {
+    "color": "#F4ECD6",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atraxsrc/cosmic-brassday-theme"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "dark",
+    "cosmic",
+    "brassday",
+    "cursor"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Cosmic Brass Day",
+        "uiTheme": "vs",
+        "path": "./themes/cosmic-brassday-color-theme.json"
+      }
+    ]
+  }
+}
