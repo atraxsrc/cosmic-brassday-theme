@@ -1,0 +1,41 @@
+# 256-colour codes nearest the Brass Day palette on parchment (lsd 1.0.0 does not accept
+# #hex here): 95 sand, 130 brick, 130 amber, 94 tan, 94 gold,
+# 59 clay, 102 taupe, 241 dusk.
+user: 94
+group: 102
+permission:
+  read: 102
+  write: 94
+  exec: 95
+  exec-sticky: 95
+  no-access: 241
+  octal: 59
+  acl: 59
+  context: 59
+date:
+  hour-old: 94
+  day-old: 94
+  older: 241
+size:
+  none: 241
+  small: 94
+  medium: 94
+  large: 130
+inode:
+  valid: 94
+  invalid: 130
+links:
+  valid: 59
+  invalid: 130
+tree-edge: 241
+git-status:
+  default: 241
+  unmodified: 241
+  ignored: 241
+  new-in-index: 94
+  new-in-workdir: 94
+  typechange: 94
+  deleted: 130
+  renamed: 59
+  modified: 130
+  conflicted: 130
