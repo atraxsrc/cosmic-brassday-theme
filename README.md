@@ -453,7 +453,7 @@ Restart open apps afterwards (Files caches icons per window).
 Add `--system` to install to `/usr/share/icons` instead, for every user and the
 login screen (asks for sudo); `--user` is the default.
 
-Wallpapers ship in [`backgrounds/`](backgrounds/), named `brassday-<subject>`, the same pictures as Brass:
+Wallpapers ship in [`backgrounds/`](backgrounds/), named `brassday-<subject>`, the same pictures as Brass, lifted into Brass Day's light key:
 three illustrations in coffee and parchment, a woman with a cigarette and her hands
 in her hair, a geisha in a striped kimono, and a masked girl with white hair
 inside a wireframe, plus the anime portrait from the screenshot
