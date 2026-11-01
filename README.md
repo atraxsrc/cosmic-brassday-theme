@@ -13,6 +13,7 @@ the dark half is [cosmic-brass-theme](https://github.com/atraxsrc/cosmic-brass-t
 ![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-7c602c?style=for-the-badge)
 ![Brass Day](https://img.shields.io/badge/Theme-BrassDay-f4ecd6?style=for-the-badge&labelColor=77603b)
 ![Firefox](https://img.shields.io/badge/Firefox-BrassDay-77603b?style=for-the-badge&logo=firefox-browser&logoColor=white)
+[![Gallery](https://img.shields.io/badge/Gallery-All_rices-77603b?style=for-the-badge)](https://atraxsrc.github.io/cosmic-rices/)
 ![License](https://img.shields.io/badge/License-MIT-67645b?style=for-the-badge)
 
 </div>
