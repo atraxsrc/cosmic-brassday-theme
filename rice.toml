@@ -1,0 +1,6 @@
+name = "Brass Day"
+mode = "light"
+theme = "BrassDay.ron"
+pair = "brass"
+terminal = "BrassDay-term.ron"
+btop = "BrassDay"
