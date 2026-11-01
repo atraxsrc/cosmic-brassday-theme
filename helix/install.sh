@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Installs the BrassDay Helix theme into ~/.config/helix/themes/
+set -e
+dir="$(cd "$(dirname "$0")" && pwd)"
+dest=~/.config/helix/themes
+mkdir -p "$dest"
+[ -f "$dest/brassday.toml" ] && cp "$dest/brassday.toml" "$dest/brassday.toml.bak"
+cp "$dir/brassday.toml" "$dest/"
+echo 'Done. Add to ~/.config/helix/config.toml:  theme = "brassday"'
