@@ -136,7 +136,7 @@ accent never needs a brighter variant.
 │   ├── BrassDay.conf            # qt5ct / qt6ct colour scheme
 │   └── install.sh
 ├── starship
-│   ├── starship.toml            # prompt, palette colours, clock on the right
+│   ├── starship.toml            # prompt, palette colours
 │   └── install.sh
 ├── telegram
 │   ├── colors.tdesktop-theme    # Telegram Desktop colour scheme (source)
@@ -519,8 +519,7 @@ kitty and Alacritty have no such switch; include the other file instead.
 `starship/starship.toml` is close to the defaults with the palette declared
 once as `[palettes.brassday]` and used by name: the directory in ![#70614C](https://placehold.co/12x12/70614c/70614c.png) `#70614C`,
 the branch in ![#6F5F36](https://placehold.co/12x12/6f5f36/6f5f36.png) `#6F5F36`, ![#9E4E1A](https://placehold.co/12x12/9e4e1a/9e4e1a.png) `#9E4E1A` for a dirty tree, a ![#7C602C](https://placehold.co/12x12/7c602c/7c602c.png) `#7C602C` prompt
-character that turns ![#A63426](https://placehold.co/12x12/a63426/a63426.png) `#A63426` after a failed command, a dim `HH:MM` clock on
-the right. Modules it does not style keep their defaults, which use the ANSI
+character that turns ![#A63426](https://placehold.co/12x12/a63426/a63426.png) `#A63426` after a failed command. Modules it does not style keep their defaults, which use the ANSI
 slots the COSMIC Terminal scheme colours. `zsh/brassday.zsh` already runs
 `starship init`. `install.sh` backs up any existing `~/.config/starship.toml`
 to `starship.toml.bak`.
