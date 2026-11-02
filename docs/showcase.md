@@ -43,7 +43,7 @@ flowchart LR
 - [x] `./icons/install.sh` for the **Cosmic-BrassDay** icons, `./cosmic/install.sh` for fonts and the terminal look
 - [x] `./zsh/install.sh`, `./lsd/install.sh`, `./fastfetch/install.sh`
 - [x] Cursor: Oxygen-BrassDay-Sand
-- [x] Wallpaper: `backgrounds/brassday-geisha.jpg`
+- [x] Wallpaper: `backgrounds/brassday-anime.png`
 - [ ] Screenshot for the README
 
 ## The baseline every rice shares
