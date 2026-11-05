@@ -128,6 +128,8 @@ accent never needs a brighter variant.
 │   ├── config.yaml              # theme: custom
 │   ├── colors.yaml              # permission / size / date / git columns
 │   └── install.sh
+├── notesnook
+│   └── cosmic-brassday.json     # Notesnook theme, Brass Day (light)
 ├── nvim                         # Neovim colorscheme, LazyVim spec, RON syntax, install.sh
 ├── obsidian
 │   ├── cosmic-brass.css         # CSS snippet, Brass (dark) + Brass Day (light)
@@ -413,6 +415,22 @@ in ![#855E19](https://placehold.co/12x12/855e19/855e19.png) `#855E19`. The same 
 
 It copies the file into the vault's `.obsidian/snippets/`. Snippets are per
 vault, so run it once per vault.
+
+---
+
+## Notesnook
+
+`notesnook/cosmic-brassday.json` is a [Notesnook](https://notesnook.com/) theme for Brass Day,
+built from the same palette as the Obsidian snippet: window, list and sidebar
+backgrounds, text, accent, selection and the error / success colours. A
+Notesnook theme holds one colour scheme, so the Brass half ships as
+`notesnook/cosmic-brass.json` in cosmic-brass-theme; load both if you switch between
+dark and light.
+
+```text
+Notesnook → Settings → Appearance → Themes → Load from file
+→ pick notesnook/cosmic-brassday.json → Set as default
+```
 
 ---
 
