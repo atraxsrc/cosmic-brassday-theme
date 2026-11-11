@@ -213,7 +213,7 @@ Firefox and the shell layer do not follow the toggle; those are per-rice files.
 | Where | Setting |
 |-------|---------|
 | Fonts | Interface `Maple Mono Normal` Light, monospace `Maple Mono Normal NFM` |
-| Icons | Cosmic-BrassDay-Sand |
+| Icons | Cosmic-BrassDay-Dark |
 | Windows | Minimize / maximize buttons hidden, theme applied to GNOME apps |
 | Terminal | Maple Mono 15 (weights 500 / bold 800 / dim 300), 77% opacity, no header bar, Brass Day |
 
@@ -706,13 +706,13 @@ cp btop/BrassDay.theme ~/.config/btop/themes/
 Icons: **Cosmic-BrassDay**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
 by Fausto Korpsvart recolored to this palette in
 [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes). Folders come in
-three colors: **Sand** ![#77603B](https://placehold.co/12x12/77603b/77603b.png) `#77603B` (default), **Brick** ![#A63426](https://placehold.co/12x12/a63426/a63426.png) `#A63426` and **Dark** ![#1D1C17](https://placehold.co/12x12/1d1c17/1d1c17.png) `#1D1C17` with sand symbols.
+three colors: **Sand** ![#77603B](https://placehold.co/12x12/77603b/77603b.png) `#77603B`, **Brick** ![#A63426](https://placehold.co/12x12/a63426/a63426.png) `#A63426` and **Dark** ![#1D1C17](https://placehold.co/12x12/1d1c17/1d1c17.png) `#1D1C17` (default) with sand symbols.
 
 ![Cosmic-BrassDay folder colors](https://raw.githubusercontent.com/atraxsrc/cosmic-icon-themes/main/previews/Cosmic-BrassDay.png)
 
 ```bash
-./icons/install.sh                       # Sand folders
-./icons/install.sh --variant Brick  # or Dark
+./icons/install.sh                 # Dark folders
+./icons/install.sh --variant Sand  # or Brick
 ```
 
 It downloads the pack from the latest cosmic-icon-themes release, checks its SHA256,
